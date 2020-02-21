@@ -1,0 +1,13 @@
+// GLOBAL
+@import 'global/variables-mixins';
+@import 'global/reset';
+@import 'global/global';
+
+// COMPONENTS
+@import 'components/header';
+@import 'components/footer';
+@import 'components/carousel';
+@import 'components/graphic';
+
+// PAGES
+@import 'pages/index';

@@ -1,6 +1,7 @@
 // Start Gulp Modules
-const { watch, series, src, dest } = require('gulp');
+const { watch, src, dest } = require('gulp');
 const sass = require('gulp-sass'),
+  notify = require('gulp-notify'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify-es').default,
   plumber = require('gulp-plumber');
@@ -8,12 +9,11 @@ const sass = require('gulp-sass'),
 function css() {
   return src('assets/sass/**/*.scss')
     .pipe(plumber())
-    .pipe(sass())
-    .pipe(
-      sass({
-        outputStyle: 'compressed',
-      }),
-    )
+    .pipe(sass({ errLogToConsole: false, outputStyle: 'compressed' }))
+    .on('error', function(err) {
+      notify().write(err);
+      this.emit('end');
+    })
     .pipe(dest('./'));
 }
 

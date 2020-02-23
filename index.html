@@ -7,10 +7,530 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" src="styles.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>A reciclagem contra-ataca</title>
   </head>
+
   <body>
+    <!-- header -->
+    <header>
+      <nav
+        class="navbar is-transparent"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/" id="main-logo">
+              <img
+                src="./assets/img/logo/marca-a-reciclagem-contra-ataca.png"
+              />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-center">
+              <a href="#a-campanha" class="navbar-item separator">
+                A campanha
+              </a>
+
+              <a href="#tipos-de-lixo" class="navbar-item separator">
+                Tipos de lixo
+              </a>
+              <a href="#coleta-e-reciclagem" class="navbar-item separator">
+                Coleta e Reciclagem
+              </a>
+              <a href="#como-separar" class="navbar-item separator">
+                Como separar?
+              </a>
+              <a href="#idade-do-lixo" class="navbar-item">
+                Idade do lixo
+              </a>
+            </div>
+
+            <div class="navbar-end is-hidden-mobile">
+              <a class="navbar-item">
+                <img
+                  src="./assets/icons/social/facebook.png"
+                  alt="facebook logo"
+                />
+              </a>
+              <a class="navbar-item">
+                <img
+                  src="./assets/icons/social/instagram.png"
+                  alt="instagram logo"
+                />
+              </a>
+              <a class="navbar-item">
+                <img
+                  src="./assets/icons/social/twitter.png"
+                  alt="twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- embeded media -->
+    <section class="section background-texture" id="youtube-video a-campanha">
+      <div class="container">
+        <div class="columns first-section">
+          <div class="column">
+            <div id="youtube-video-text-content">
+              <h1 id="title-primary">seja um herói da coleta seletiva</h1>
+              <p>
+                Os moradores do Distrito Federal estão se preparando e a coleta
+                seletiva é nossa arma contra o terrível monstro do lixo!
+              </p>
+              <p>
+                <span>Faça parte desta aventura!</span>
+              </p>
+              <p>
+                Vamos juntos transformar a reciclagem na nossa grande heroína.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div id="youtube-video-media-content">
+              <iframe
+                width="100%"
+                src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- embeded media end -->
+
+    <!-- tipos de lixo -->
+    <section class="section" id="tipos-de-lixo">
+      <div class="container">
+        <div>
+          <h1 class="title title-primary">
+            Como separar seu lixo
+          </h1>
+          <p class="subtitle subtitle-primary">
+            Errar na hora do descarte pode ser fatal!<br />Entenda o potencial
+            das suas armas:
+          </p>
+        </div>
+        <div class="arrow"></div>
+        <div class="owl-carousel">
+          <div>
+            <img src="./assets/img/carousel/recilaveis.png" alt="" />
+            <div class="list">
+              <h2>recicláveis</h2>
+              <ul>
+                <li>Cascas de frutas e legumes</li>
+                <li>Restos de comida</li>
+                <li>Borra de café</li>
+                <li>Sementes</li>
+                <li>Cascas de ovos</li>
+                <li>Folhas secas</li>
+                <li>Sachê de chá</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/img/carousel/organicos.png" alt="" />
+            <div class="list">
+              <h2>orgânicos</h2>
+              <ul>
+                <li>Cascas de frutas e legumes</li>
+                <li>Restos de comida</li>
+                <li>Borra de café</li>
+                <li>Sementes</li>
+                <li>Cascas de ovos</li>
+                <li>Folhas secas</li>
+                <li>Sachê de chá</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/img/carousel/rejeitos.png" alt="" />
+            <div class="list">
+              <h2>rejeitos</h2>
+              <ul>
+                <li>Cascas de frutas e legumes</li>
+                <li>Restos de comida</li>
+                <li>Borra de café</li>
+                <li>Sementes</li>
+                <li>Cascas de ovos</li>
+                <li>Folhas secas</li>
+                <li>Sachê de chá</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="small">Fonte: Serviço de Limpeza Urbana do Distrito Federal</p>
+    </section>
+    <!-- tipos de lixo end -->
+
+    <!-- coleta e reciclagem -->
+    <section class="section" id="coleta-e-reciclagem">
+      <div class="container">
+        <div>
+          <h1 class="title title-primary">
+            Benefícios da coleta seletiva e reciclagem
+          </h1>
+          <p class="small">
+            Fonte: Serviço de Limpeza Urbana do Distrito Federal
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column beneficios">
+            <ul class="beneficios-list">
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/folha.png" />
+                <p>
+                  Preservação do ambiente, das florestas e da água (evitando a
+                  poluição da água, do solo e do ar);
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/recursos.png" />
+                <p>
+                  Redução da extração de recursos naturais;
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/cooperacao.png" />
+                <p>
+                  Fortalecimento da cidadania e da responsabilidade de cada um
+                  pelo meio ambiente;
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/vida-util.png" />
+                <p>
+                  Aumento da vida útil dos aterros sanitários;
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="column beneficios-list-separar"></div>
+          <div class="column beneficios">
+            <ul class="beneficios-list">
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/pa.png" />
+                <p>
+                  Melhoria da qualidade dos compostos obtidos por meio da
+                  matéria orgânica;
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/estimulo.png" />
+                <p>
+                  Estímulo a mudança de hábitos e valores para as próximas
+                  gerações
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/ciclo.png" />
+                <p>
+                  Aumento do ciclo de vida dos produtos;
+                </p>
+              </li>
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/catador.png" />
+                <p>
+                  Inclusão socioeconômica dos catadores de materiais
+                  recicláveis;
+                </p>
+              </li>
+
+              <li class="beneficios-list-item">
+                <img src="./assets/icons/beneficios/economizar.png" />
+                <p>Geração de empregos e renda.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-center"
+          >saiba os dias de coleta seletiva na sua cidade</a
+        >
+      </div>
+    </section>
+    <!-- coleta e reciclagem end-->
+
+    <!-- como separar -->
+    <section class="section background-texture" id="como-separar">
+      <div>
+        <h1 class="title title-secondary">
+          Separe seu lixo
+        </h1>
+        <p class="subtitle subtitle-secondary">
+          Vamos ver se você sabe para onde vai cada tipo de lixo? Clique nas
+          lixeiras e teste seus conhecimentos!
+        </p>
+      </div>
+      <div id="como-separar-lixeiras">
+        <div class="lixeiras-wrapper" id="como-separar-lixeiras-reciclaveis">
+          <div>
+            <h2>recicláveis</h2>
+            <img
+              id="lixeiraReciclavel"
+              src="./assets/img/separe-seu-lixo/lixeira-reciclaveis.png"
+              alt="lixeira reclicaveis"
+            />
+          </div>
+
+          <div id="como-separar-lixeiras-reciclaveis-open">
+            <img src="./assets/img/separe-seu-lixo/reciclaveis.png" />
+          </div>
+        </div>
+
+        <div class="lixeiras-wrapper" id="como-separar-lixeiras-organicos">
+          <div id="como-separar-lixeiras-organicos-open">
+            <img src="./assets/img/separe-seu-lixo/organicos.png" />
+          </div>
+
+          <div>
+            <h2>orgânicos e rejeitos</h2>
+            <img
+              id="lixeiraOrganicos"
+              src="./assets/img/separe-seu-lixo/lixeira-nao-reclicaveis.png"
+              alt="lixeira não reclicaveis"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- como separar end -->
+
+    <!-- dicas importantes -->
+    <section class="section" id="dicas-importantes">
+      <div class="container">
+        <div class="columns dicas-importantes">
+          <div class="column">
+            <div id="agente">
+              <img
+                src="./assets/img/dicas-importantes/agente.png"
+                alt="agente"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div id="dicas">
+              <h3>dicas importantes</h3>
+              <ul>
+                <li>
+                  • Separe seus resíduos em dois recipientes: um para materiais
+                  recicláveis e outro para orgânicos e rejeitos.
+                </li>
+                <li>
+                  • Não precisa lavar os materiais recicláveis! Basta retirar o
+                  excesso de alimentos ou líquidos.
+                </li>
+                <li>
+                  • Todo material perfurocortante (cacos de vidro, pregos,
+                  alfinetes, e etc.) deve ser embrulhado para não machucar os
+                  trabalhadores que cuidam do seu lixo!
+                </li>
+                <li>
+                  • Medicamentos vencidos e seringas DEVEM ser entregues em
+                  farmácias ou postos de saúde.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dicas importantes end -->
+
+    <!-- botoes -->
+    <section class="section" id="buttons">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <a href="/" class="btn btn-primary">coleta seletiva</a>
+          </div>
+          <div class="column">
+            <a href="/" class="btn btn-primary"
+              >Onde descartar óleo de fritura</a
+            >
+          </div>
+          <div class="column">
+            <a href="/" class="btn btn-primary"
+              >Saiba como fazer compostagem doméstica
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- botoes end -->
+
+    <!-- idade do lixo -->
+    <section class="section" id="idade-do-lixo">
+      <div class="container">
+        <div>
+          <h1 class="title title-secondary">
+            O que acontece com o lixo que não reciclamos
+          </h1>
+          <p class="subtitle subtitle-secondary">
+            Você sabe quanto tempo os produtos que consumimos demoram para se
+            decompor no meio ambiente?
+          </p>
+        </div>
+        <div id="idade-do-lixo-banner">
+          <h2 id="idade-do-lixo-banner-title-first">
+            Os que<br />
+            demoram <br />mais
+          </h2>
+          <div id="idade-do-lixo-banner-images">
+            <img
+              src="./assets/img/oque-acontece/pote-de-vidro.png"
+              alt="pote de vidro"
+            />
+            <img src="./assets/img/oque-acontece/pneu.png" alt="pneu" />
+            <img
+              src="./assets/img/oque-acontece/latinha-roxa.png"
+              alt="lata de aluminio"
+            />
+          </div>
+          <h2 id="idade-do-lixo-banner-title-last">
+            vidro, borracha e alumínio <br />
+            <span>Até <strong>1 milhão</strong> de anos</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section background-texture" id="graphic">
+      <div class="container">
+        <ul class="graphic-bars">
+          <li class="graphic-bars-item">
+            <span>Papel</span>
+            <div class="graphic-bars-item-bar anime" data-width="40">
+              <p>3 meses</p>
+              <img src="./assets/icons/graphics/papel.png" alt="papel" />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Papelão</span>
+            <div class="graphic-bars-item-bar anime" data-width="40">
+              <p>3 meses</p>
+              <img src="./assets/icons/graphics/caixa.png" alt="papelao" />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Saco plástico</span>
+            <div class="graphic-bars-item-bar anime" data-width="60">
+              <p>30 a 40 anos</p>
+              <img src="./assets/icons/graphics/sacola.png" alt="papelao" />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Alumínio</span>
+            <div class="graphic-bars-item-bar anime" data-width="70">
+              <p>+ de 100 anos</p>
+              <img src="./assets/icons/graphics/latinha.png" alt="papelao" />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Caixa longa vida</span>
+            <div class="graphic-bars-item-bar anime" data-width="70">
+              <p>+ de 100 anos</p>
+              <img
+                src="./assets/icons/graphics/caixa-de-leite.png"
+                alt="papelao"
+              />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Garrafa PET</span>
+            <div class="graphic-bars-item-bar anime" data-width="70">
+              <p>+ de 100 anos</p>
+              <img
+                src="./assets/icons/graphics/garrafa-pet.png"
+                alt="papelao"
+              />
+            </div>
+          </li>
+          <li class="graphic-bars-item">
+            <span>Vidro</span>
+            <div class="graphic-bars-item-bar anime" data-width="100">
+              <p>4 mil anos</p>
+              <img src="./assets/icons/graphics/vidro.png" alt="papelao" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- idade do lixo end -->
+
+    <!-- footer -->
+    <footer class="section" id="footer">
+      <div class="container">
+        <div class="footer-adasa">
+          <div class="dados">
+            <div id="logo-nagative">
+              <img
+                src="./assets/img/logo/adasa-logo-negative.png"
+                alt="logo adasa"
+              />
+            </div>
+            <div id="footer-social">
+              <ul id="footer-social-items">
+                <li id="footer-social-items-item">
+                  <a href="http://" target="_blank">
+                    <img
+                      src="./assets/icons/social/facebook.png"
+                      alt="facebook logo"
+                    />
+                  </a>
+                </li>
+                <li id="footer-social-items-item">
+                  <a href="http://" target="_blank">
+                    <img src="./assets/icons/social/instagram.png" />
+                  </a>
+                </li>
+                <li id="footer-social-items-item">
+                  <a href="http://" target="_blank">
+                    <img
+                      src="./assets/icons/social/twitter.png"
+                      alt="twitter logo"
+                    />
+                  </a>
+                </li>
+                <p>/adasaoficial</p>
+              </ul>
+            </div>
+          </div>
+          <div class="lixo-papao">
+            <h2 class="lixo-papao-title">
+              Você não vai querer<br />
+              conhecer o <strong>Lixo Papão</strong>
+            </h2>
+            <img src="./assets/img/footer/monster.png" alt="Lixo papão" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="/assets/js/plugins.min.js"></script>
     <script src="/assets/js/main.min.js"></script>
+    <!-- scripts end -->
   </body>
 </html>

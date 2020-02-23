@@ -1,7 +1,12 @@
 // GLOBAL
+@import '../../node_modules/bulma/bulma.sass';
 @import 'global/variables-mixins';
 @import 'global/reset';
 @import 'global/global';
+
+// PLUGINS
+@import 'plugins/owl.carousel.min';
+@import 'plugins/owl.theme.default.min';
 
 // COMPONENTS
 @import 'components/header';

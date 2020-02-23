@@ -1,0 +1,84 @@
+.is-transparent {
+  background: $color-1;
+}
+// main logo
+#main-logo {
+  &:after {
+    content: '';
+    background: $color-1;
+    width: 110%;
+    height: 140%;
+    position: absolute;
+    z-index: -1;
+    right: -14px;
+    border-radius: 0 0 20px 20px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+  & img {
+    max-height: 200px;
+  }
+  @include bp(cel) {
+    left: 0;
+    top: 12px;
+    padding: 0 0 0 10px;
+    box-shadow: none;
+  }
+  @include bp(tab) {
+    left: 0;
+    top: 12px;
+    padding: 0 0 0 10px;
+    box-shadow: none;
+  }
+}
+
+.navbar-menu {
+  padding: 0;
+}
+.navbar-burger {
+  color: $color-1;
+  background-color: $color-2;
+}
+.navbar-burger:hover {
+  background-color: $color-2;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  @include bp(cel) {
+    flex-direction: column;
+    background-color: $color-1;
+  }
+  @include bp(tab) {
+    flex-direction: column;
+    background-color: $color-1;
+  }
+}
+.navbar-item {
+  color: #fff;
+  transition: all 0.35s ease;
+  border-bottom: 2px solid transparent;
+  @include typePrimary();
+  &:hover {
+    color: $color-2 !important;
+    border-bottom: 2px solid currentColor;
+  }
+  &.separator:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: #fff;
+    right: 0;
+    @include bp(cel) {
+      display: none;
+    }
+    @include bp(tab) {
+      display: none;
+    }
+  }
+}

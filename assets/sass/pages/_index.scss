@@ -1,10 +1,13 @@
 // youtube video section
-.first-section {
-  justify-content: center;
-  align-items: center;
-}
+
 #youtube-video {
   &-text-content {
+    max-width: 80%;
+    float: right;
+
+    @include bp(tab) {
+      float: none;
+    }
     #title-primary {
       @include typePrimary(700, 60);
       text-transform: uppercase;
@@ -31,7 +34,10 @@
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 85%;
+    @include bp(tab) {
+      max-width: 100%;
+    }
     @include radius();
     iframe {
       position: absolute;
@@ -256,6 +262,12 @@
   max-width: 880px;
   margin: 0 auto;
   @include radius();
+  & > p.small {
+    position: absolute;
+    right: 0;
+    bottom: -60%;
+    color: $color-1;
+  }
   @include bp(tab) {
     max-width: 100%;
     &-images {
